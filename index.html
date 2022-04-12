@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DevMinh Portfolio Website</title>
+    <!--Normalize CSS-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+    />
+    <script
+      src="https://kit.fontawesome.com/cb99c9462b.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!--Font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,300;0,900;1,400&display=swap"
+      rel="stylesheet"
+    />
+
+    <!--CSS-->
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <img src="img/Personal/Minh Le.png" alt="Minh Le" />
+      </div>
+      <button class="nav-toggle" aria-label="toggle navigation">
+        <span class="hambuger"></span>
+      </button>
+      <nav class="nav">
+        <ul class="nav__list">
+          <li class="nav__item">
+            <a href="#home" class="nav__links">Home</a>
+          </li>
+          <li class="nav__item">
+            <a href="#services" class="nav__links">My Services</a>
+          </li>
+          <li class="nav__item">
+            <a href="#about" class="nav__links">About Me</a>
+          </li>
+          <li class="nav__item">
+            <a href="#work" class="nav__links">My Work</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <!--Introduction-->
+    <section class="intro" id="home">
+      <h1 class="section__title section__title--intro">
+        Hi, i am <strong>Minh Le</strong>
+      </h1>
+      <p class="section__subtitle section__subtitle--intro">Front-end Dev</p>
+      <img
+        src="img/Personal/dev-Minh-01.jpg"
+        alt="a picture of Minh le"
+        class="intro__img"
+      />
+    </section>
+
+    <!--Services-->
+    <section class="my-services" id="services">
+      <h2 class="section__title section__title--services">What I Do</h2>
+      <div class="services">
+        <div class="service">
+          <h3>Front-end development</h3>
+          <p>
+            Responsive websites built for an optimal user experience that
+            achieves your business goals.
+          </p>
+        </div>
+        <!--service-->
+
+        <div class="service">
+          <h3>Performance, SEO, & accessibility testing</h3>
+          <p>
+            Make your website fast, easy to find, and reach the widest audience
+            possible.
+          </p>
+        </div>
+        <!--service-->
+
+        <div class="service">
+          <h3>I love working with small businesses</h3>
+          <p>
+            I specialize in creating sites for individuals and small businesses.
+            You shouldn’t have to settle for cheap solutions or generic
+            templates. I provide custom designs at afforable prices.
+          </p>
+        </div>
+        <!--service-->
+      </div>
+      <a href="#work" class="btn">My Work</a>
+    </section>
+
+    <!--About Me-->
+    <section class="about-me" id="about">
+      <h2 class="section__title section__title--about">Who I Am</h2>
+      <p class="section__subtitle section__subtitle--about">
+        Designer & Developer based out of Ho Chi Minh
+      </p>
+
+      <div class="about-me__body">
+        <p>
+          I’ve always been someone who has both a creative and a logical side.
+          When I discovered web design in college, I realized it would be the
+          perfect fit. I could use my creative side to design and my logical
+          side to code. As a bonus, being both designer and developer allows me
+          to make sure no detail is lost in translation.
+        </p>
+        <p>
+          My abundant energy fuels me in the pursuit of many interests, hobbies,
+          areas of study and artistic endeavors. I’m a fast learner, able to
+          pick up new skills and juggle different projects and roles with
+          relative ease.
+        </p>
+      </div>
+      <img
+        src="img/Personal/nubelson-fernandes-UcYBL5V0xWQ-unsplash2x.jpg"
+        alt="What I DO"
+        class="about-me__img"
+      />
+    </section>
+
+    <!--My Work-->
+    <section class="my-work" id="work">
+      <h2 class="section__title section__title--work">My Work</h2>
+      <p class="section__subtitle section__subtitle--work">
+        Selection of my range of works
+      </p>
+
+      <div class="portfolio">
+        <!--Portfolio Item 1-->
+        <div class="portfolio__item">
+          <div class="portfolio__item--hover">
+            <div class="portfolio__item--visit">
+              <a
+                href="https://appiepie.github.io/article-preview/"
+                class="portfolio__visit"
+                >visit website</a
+              >
+              <i class="fa fa-chevron-circle-right fa-align-right"></i>
+            </div>
+          </div>
+          <img
+            src="img/mobile/Rectangle 3-1@2x.png"
+            alt="portfolio-1"
+            class="portfolio__img"
+          />
+        </div>
+        <!--Portfolio Item 2-->
+        <div class="portfolio__item">
+          <div class="portfolio__item--hover">
+            <div class="portfolio__item--visit">
+              <a
+                href="https://appiepie.github.io/fylo-data-storage/"
+                class="portfolio__visit"
+                >visit website</a
+              >
+              <i class="fa fa-chevron-circle-right fa-align-right"></i>
+            </div>
+          </div>
+          <img
+            src="img/mobile/Rectangle 3-2@2x.png"
+            alt="portfolio-2"
+            class="portfolio__img"
+          />
+        </div>
+
+        <!--Portfolio Item 3-->
+        <div class="portfolio__item">
+          <div class="portfolio__item--hover">
+            <div class="portfolio__item--visit">
+              <a
+                href="https://appiepie.github.io/testimonials-grid/"
+                class="portfolio__visit"
+                >visit website</a
+              >
+              <i class="fa fa-chevron-circle-right fa-align-right"></i>
+            </div>
+          </div>
+          <img
+            src="img/mobile/Rectangle 3-3@2x.png"
+            alt="portfolio-3"
+            class="portfolio__img"
+          />
+        </div>
+
+        <!--Portfolio Item 4-->
+        <div class="portfolio__item">
+          <div class="portfolio__item--hover">
+            <div class="portfolio__item--visit">
+              <a
+                href="https://appiepie.github.io/huddle-landing-page/"
+                class="portfolio__visit"
+                >visit website</a
+              >
+              <i class="fa fa-chevron-circle-right fa-align-right"></i>
+            </div>
+          </div>
+          <img
+            src="img/mobile/Rectangle 3-4@2x.png"
+            alt="portfolio-4"
+            class="portfolio__img"
+          />
+        </div>
+
+        <!--Portfolio Item 5-->
+        <div class="portfolio__item">
+          <div class="portfolio__item--hover">
+            <div class="portfolio__item--visit">
+              <a
+                href="https://appiepie.github.io/single-price-grid/"
+                class="portfolio__visit"
+                >visit website</a
+              >
+              <i class="fa fa-chevron-circle-right fa-align-right"></i>
+            </div>
+          </div>
+          <img
+            src="img/mobile/Rectangle 3-5@2x.png"
+            alt="portfolio-5"
+            class="portfolio__img"
+          />
+        </div>
+
+        <!--Portfolio Item 6-->
+        <div class="portfolio__item">
+          <div class="portfolio__item--hover">
+            <div class="portfolio__item--visit">
+              <a
+                href="https://appiepie.github.io/social-proof-section-master/"
+                class="portfolio__visit"
+                >visit website</a
+              >
+              <i class="fa fa-chevron-circle-right fa-align-right"></i>
+            </div>
+          </div>
+          <img
+            src="img/mobile/Rectangle 3-6@2x.png"
+            alt="portfolio-6"
+            class="portfolio__img"
+          />
+        </div>
+
+        <!--Portfolio Item 1-->
+        <div class="portfolio__item">
+          <div class="portfolio__item--hover">
+            <div class="portfolio__item--visit">
+              <a
+                href="https://appiepie.github.io/3-column-card/"
+                class="portfolio__visit"
+                >visit website</a
+              >
+              <i class="fa fa-chevron-circle-right fa-align-right"></i>
+            </div>
+          </div>
+          <img
+            src="img/mobile/Rectangle 3-7@2x.png"
+            alt="portfolio-7"
+            class="portfolio__img"
+          />
+        </div>
+
+        <!--Portfolio Item 8-->
+        <div class="portfolio__item">
+          <div class="portfolio__item--hover">
+            <div class="portfolio__item--visit">
+              <a
+                href="https://appiepie.github.io/huddle-landing-page/"
+                class="portfolio__visit"
+                >visit website</a
+              >
+              <i class="fa fa-chevron-circle-right fa-align-right"></i>
+            </div>
+          </div>
+          <img
+            src="img/mobile/Rectangle 3-8@2x.png"
+            alt="portfolio-8"
+            class="portfolio__img"
+          />
+        </div>
+
+        <!--Portfolio Item 9-->
+        <div class="portfolio__item">
+          <div class="portfolio__item--hover">
+            <div class="portfolio__item--visit">
+              <a
+                href="https://appiepie.github.io/faq-accordion-card/"
+                class="portfolio__visit"
+                >visit website</a
+              >
+              <i class="fa fa-chevron-circle-right fa-align-right"></i>
+            </div>
+          </div>
+          <img
+            src="img/mobile/Rectangle 3-9@2x.png"
+            alt="portfolio-9"
+            class="portfolio__img"
+          />
+        </div>
+
+        <!--Portfolio Item 10-->
+        <div class="portfolio__item">
+          <div class="portfolio__item--hover">
+            <div class="portfolio__item--visit">
+              <a
+                href="https://appiepie.github.io/nft-preview-card/"
+                class="portfolio__visit"
+                >visit website</a
+              >
+              <i class="fa fa-chevron-circle-right fa-align-right"></i>
+            </div>
+          </div>
+          <img
+            src="img/mobile/Rectangle 3-10@2x.png"
+            alt="portfolio-10"
+            class="portfolio__img"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!--Footer-->
+    <footer class="footer">
+      <a href="mailto:xuanminhle1611@gmail.com" class="footer__link"
+        >xuanminhle1611@gmail.com</a
+      >
+      <ul class="social-list">
+        <li class="social-list__item">
+          <a
+            class="social-list__link"
+            href="https://www.linkedin.com/in/minh-l%C3%AA-887236150/"
+            >Linkedin</a
+          >
+          <i class="fa-brands fa-linkedin"></i>
+        </li>
+        <li class="social-list__item">
+          <a
+            class="social-list__link"
+            href="https://www.facebook.com/zebub.beel.14/"
+            >Facebook</a
+          >
+          <i class="fa-brands fa-facebook"></i>
+        </li>
+        <li class="social-list__item">
+          <a class="social-list__link" href="https://github.com/AppiePie"
+            >Github</a
+          >
+          <i class="fa-brands fa-github"></i>
+        </li>
+        <li class="social-list__item">
+          <a class="social-list__link" href="https://wa.me/+84813193643"
+            >Whatsapp</a
+          >
+          <i class="fa-brands fa-whatsapp"></i>
+        </li>
+      </ul>
+    </footer>
+  </body>
+  <script src="js/index.js"></script>
+</html>
