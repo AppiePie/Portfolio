@@ -20,4 +20,5 @@ portfolioEnter.forEach((port) => {
     port.classList.remove("port-enter");
   });
 });
-/* Make whole div clickable outside a link */
+
+/*Bounching Ball Animation*/
