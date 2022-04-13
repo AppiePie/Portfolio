@@ -130,8 +130,10 @@ h3 {
 /* header */
 header {
   display: flex;
+  padding: 0.5em;
   justify-content: space-between;
   border-bottom: 3px solid var(--clr-accent);
+  box-shadow: var(--bs);
 }
 .logo {
   max-width: 100px;
@@ -139,8 +141,19 @@ header {
   align-items: center;
   justify-content: center;
 }
+
+@media (min-width: 800px) {
+  header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: var(--clr-light);
+    z-index: 100;
+    width: 100%;
+  }
+}
 /*Navigation*/
-@media (max-width: 729px) {
+@media (max-width: 799px) {
   .nav {
     position: fixed;
     background: var(--clr-dark);
@@ -232,17 +245,16 @@ header {
     bottom: 6px;
   }
 }
-@media (min-width: 730px) {
+@media (min-width: 800px) {
   .nav {
     display: flex;
-    position: relative;
   }
   .nav__list {
     display: flex;
     list-style: none;
   }
   .nav__item {
-    padding: 0.5em 1em;
+    padding: 0.3em 1em;
     border-radius: 100px;
     transition: background-color 500ms ease-in-out;
   }
@@ -264,7 +276,6 @@ header {
     display: none;
   }
   .contact-me {
-    margin-right: 1em;
     border: 2px solid var(--clr-accent);
   }
 }
@@ -312,7 +323,7 @@ header {
   background-color: var(--clr-dark);
   background-image: url("../img/mobile/christopher-gower-m_HRfLhgABo-unsplash@2x.png");
   background-size: cover;
-  /*background-blend-mode: multiply;*/
+  background-blend-mode: color-burn;
   text-align: center;
   color: var(--clr-light);
 }
@@ -337,16 +348,15 @@ header {
 .service {
   max-width: 500px;
   margin: 0 auto;
+  box-shadow: var(--bs);
   background-color: var(--clr-dark);
   padding: 1em 2em;
   position: relative;
+  border-bottom: 3px solid currentColor;
 }
 .service__img {
   width: 50px;
   max-width: 300px;
-  /* padding: 1em;
-  border-radius: 50%; 
-  background-color: currentColor;*/
   margin: 0 auto;
 }
 .service__img.react {
@@ -566,4 +576,111 @@ header {
 }
 .portfolio-item-individual img {
   margin: 0 auto;
+}
+
+/*fade-in animation */
+.fade-in {
+  opacity: 0;
+  transform: translateY(50%);
+  transition: opacity 500ms ease-in-out, transform 400ms ease-in;
+}
+
+.fade-in.appear {
+  opacity: 1;
+  transform: translateY(0%);
+}
+
+/*from left right animation */
+
+.from-left {
+  transform: translateX(-50%);
+}
+
+.from-right {
+  transform: translateX(50%);
+}
+
+.from-left,
+.from-right {
+  transition: opacity 250ms ease-in, transform 400ms ease-in;
+  opacity: 0;
+}
+
+.from-left.appear,
+.from-right.appear {
+  transform: translateX(0);
+  opacity: 1;
+}
+
+/*animation background */
+.intro-area {
+  position: relative;
+  overflow: hidden;
+}
+.box-area {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+.box-area li {
+  position: absolute;
+  display: block;
+  list-style: none;
+  width: 25px;
+  height: 25px;
+  background: var(--clr-accent);
+  opacity: 0.5;
+  animation: animate 20s linear infinite;
+  bottom: -150px;
+}
+.box-area li:nth-child(1) {
+  left: 86%;
+  width: 80px;
+  height: 80px;
+  animation-delay: 0s;
+}
+.box-area li:nth-child(2) {
+  left: 12%;
+  width: 30px;
+  height: 30px;
+  animation-delay: 1.5s;
+  animation-duration: 10s;
+}
+.box-area li:nth-child(3) {
+  left: 70%;
+  width: 100px;
+  height: 100px;
+  animation-delay: 5.5s;
+}
+.box-area li:nth-child(4) {
+  left: 42%;
+  width: 150px;
+  height: 150px;
+  animation-delay: 0s;
+  animation-duration: 15s;
+}
+.box-area li:nth-child(5) {
+  left: 65%;
+  width: 40px;
+  height: 40px;
+  animation-delay: 0s;
+}
+.box-area li:nth-child(6) {
+  left: 15%;
+  width: 110px;
+  height: 110px;
+  animation-delay: 3.5s;
+}
+@keyframes animate {
+  0% {
+    transform: translateY(0) rotate(0deg);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(-800px) rotate(360deg);
+    opacity: 0;
+  }
 }
