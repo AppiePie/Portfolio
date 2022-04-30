@@ -143,14 +143,14 @@ header {
 }
 
 @media (min-width: 800px) {
-  header {
+  /* header {
     position: fixed;
     top: 0;
     left: 0;
     background-color: var(--clr-light);
     z-index: 100;
     width: 100%;
-  }
+  } */
 }
 /*Navigation*/
 @media (max-width: 799px) {
@@ -609,6 +609,27 @@ header {
 .from-left.appear,
 .from-right.appear {
   transform: translateX(0);
+  opacity: 1;
+}
+/*Blur animatation */
+.blur-up {
+  -webkit-filter: blur(5px);
+  filter: blur(5px);
+  transition: filter 400ms, -webkit-filter 400ms;
+}
+
+.blur-up.lazyloaded {
+  -webkit-filter: blur(0);
+  filter: blur(0);
+}
+/*fade box */
+.fade-box .lazyload,
+.fade-box .lazyloading {
+  opacity: 0;
+  transition: opacity 400ms;
+}
+
+.fade-box img.lazyloaded {
   opacity: 1;
 }
 

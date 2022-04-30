@@ -22,16 +22,17 @@ portfolioEnter.forEach((port) => {
 });
 
 /* add margin to header when resize */
-function checkSizeChange() {
-  const width = window.innerWidth;
-  const header = document.querySelector("header");
-  const headerOffSet = header.offsetHeight;
-  if (width >= 800) {
-    document.body.style.paddingTop = headerOffSet + "px";
-  } else document.body.style.paddingTop = "0px";
-}
-checkSizeChange();
-window.addEventListener("resize", () => checkSizeChange());
+
+// function checkSizeChange() {
+//   const width = window.innerWidth;
+//   const header = document.querySelector("header");
+//   const headerOffSet = header.offsetHeight;
+//   if (width >= 800) {
+//     document.body.style.paddingTop = headerOffSet + "px";
+//   } else document.body.style.paddingTop = "0px";
+// }
+// checkSizeChange();
+// window.addEventListener("resize", () => checkSizeChange());
 
 /*fade slide-in animation */
 const faders = document.querySelectorAll(".fade-in");
